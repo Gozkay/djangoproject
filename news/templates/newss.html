@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+	         font-family: Arial, sans-serif;
+	          margin: 0;
+             }
+
+        header {
+	             background-color: #333;
+	            color: #fff;
+	             display: flex;
+               }
+    </style>
+	<title>News Homepage</title>
+</head>
+<body>
+    <div class="container">
+        <h1 >Welcome , {{ name }}</h1>
+        <h2>For the latest update </h2>
+        <h4><a href='/admin'>link to admin</a></h4>
+    </div>
+	<header>
+		<h1>News Home</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">World News</a></li>
+				<li><a href="#">Sports</a></li>
+				<li><a href="#">Technology</a></li>
+				<li><a href="#">Entertainment</a></li>
+			</ul>
+			<form action="">
+                <div class="mb-3">
+                    <label class="form-label">Search for News:</label> 
+                    <input type="text" name="searchNews" class="form-control"/>
+                    
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Breaking News</h2>
+			<div class="article">
+				<h3>Headline</h3>
+				<p>Article text goes here...</p>
+				<a href="#">Read More</a>
+			</div>
+			<div class="article">
+				<h3>Headline</h3>
+				<p>Article text goes here...</p>
+				<a href="#">Read More</a>
+			</div>
+			<div class="article">
+				<h3>Headline</h3>
+				<p>Article text goes here...</p>
+				<a href="#">Read More</a>
+			</div>
+		</section>
+		<section>
+			<h2>World News</h2>
+			<div class="article">
+				<h3>Headline</h3>
+				<p>Article text goes here...</p>
+				<a href="#">Read More</a>
+			</div>
+			<div class="article">
+				<h3>Headline</h3>
+				<p>Article text goes here...</p>
+				<a href="#">Read More</a>
+			</div>
+			<div class="article">
+				<h3>Headline</h3>
+				<p>Article text goes here...</p>
+				<a href="#">Read More</a>
+			</div>
+		</section>
+		<section>
+			<h2>Sports</h2>
+			<div class="article">
+				<h3>Headline</h3>
+				<p>Article text goes here...</p>
+				<a href="#">Read More</a>
+			</div>
+			<div class="article">
+				<h3>Headline</h3>
+				<p>Article text goes here...</p>
+				<a href="#">Read More</a>
+			</div>
+			<div class="article">
+				<h3>Headline</h3>
+				<p>Article text goes here...</p>
+				<a href="#">Read More</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 News Website</p>
+		<a href="{% url 'signup' %}">Sign Up for Our Mailing List</a>
+	</footer>
+</body>
+</html>
